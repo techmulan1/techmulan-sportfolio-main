@@ -7,7 +7,6 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     const message = document.getElementById('message').value;
     
     if (name && email && message) {
-      alert('Thank you for reaching out, ' + name + '! I will get back to you soon.');
       document.getElementById('contact-form').reset(); // Reset form after submission
     } else {
       alert('Please fill in all fields.');
