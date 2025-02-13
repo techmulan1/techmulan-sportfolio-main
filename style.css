@@ -139,26 +139,96 @@ footer {
 }
 
 
-@media (min-width: 1024px) {
-  .projects img {
-    width: 300px;
-    /* Adjusts width to 80% on larger screens */
-  }
-}
-
-/* For medium screens (tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .projects img {
-    width: 250px;
-    /* Adjusts width to 90% on tablets */
-  }
-}
-
-/* For small screens (mobile devices) */
-@media (max-width: 767px) {
-  .projects img {
-    width: 150px;
-    /* Ensures full-width on mobile devices */
-  }
-}
-
+<!-- Add your CSS here -->
+  <style>
+    /* Base Styles */
+    #projects {
+      padding: 40px 0;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap; /* Allow the cards to wrap */
+      gap: 20px; /* Add space between the cards */
+      justify-content: center; /* Center cards on larger screens */
+    }
+  
+    .project-card {
+      width: 100%;
+      max-width: 320px; /* Limit the max width of cards */
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .project-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    h3 {
+      margin: 15px 0;
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .project-link {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  
+    .project-link:hover {
+      background-color: #0056b3;
+    }
+  
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      .project-cards {
+        justify-content: space-between; /* Adjust spacing on smaller screens */
+      }
+  
+      .project-card {
+        width: 100%; /* Take up full width on smaller screens */
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      h2 {
+        font-size: 1.5rem; /* Adjust header font size */
+      }
+  
+      h3 {
+        font-size: 1.2rem; /* Adjust project card title font size */
+      }
+  
+      p {
+        font-size: 0.9rem; /* Adjust project description font size */
+      }
+  
+      .project-link {
+        font-size: 0.9rem; /* Adjust the link font size */
+      }
+    }
+  </style>
