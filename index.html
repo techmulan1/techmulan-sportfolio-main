@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-End Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h1>Hi, I'm Tech Mulan</h1>
+      <p>Your go-to front-end web developer</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I specialize in building responsive, user-friendly websites using modern front-end technologies like HTML, CSS, and JavaScript. I'm passionate about creating seamless web experiences.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-card">
+        <img src="./travelagencyimage.png" alt="" width="300px">
+
+        <img src="./bfrhje.png" alt="" width="300px">
+        <img src="./gsjkdbgs.png" alt="" width="300px">
+        <h3>Travel Agency websites</h3>
+        <p>I built this travel agency website using HTML, CSS, Bootstrap and JavaScript.</p>
+        <a href="https://travel-agency-lac.vercel.app/" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+
+        <img src="./bmiimg.png" alt="" width="300px">
+        <h3>BMI Calculator</h3>
+        <p>I built this BMI Calculator with HTML, CSS and JavaScript</p>
+        <a href="https://bmi-calculator-main-uojx.vercel.app/" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mgvollbw" method="POST" id="contact-form" >
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="">Send Message</button>
+        
+        
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Tech Mulan | Front-End Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
