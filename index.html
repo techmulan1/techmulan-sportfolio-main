@@ -1,101 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front-End Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <section id="home">
-      <div class="container">
-        <h1>Hi, I'm Tech Mulan</h1>
-        <p>Your go-to front-end web developer</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front-End Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 
-    <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I specialize in building responsive, user-friendly websites using
-          modern front-end technologies like HTML, CSS, and JavaScript. I'm
-          passionate about creating seamless web experiences.
-        </p>
-      </div>
-    </section>
 
-    <section id="projects">
-      <div class="container">
-        <h2>My Projects</h2>
-        <!-- Flexbox Container for the project cards -->
-        <div class="project-cards">
-          <!-- Project Card 1 -->
-          <div class="project-card">
-            <img
-              src="./travelagencyimage.png"
-              alt="Travel Agency Website"
-              class="project-img"
-            />
-            <h3>Travel Agency websites</h3>
-            <p>
-              I built this travel agency website using HTML, CSS, Bootstrap, and
-              JavaScript.
-            </p>
-            <a href="https://travel-agency-lac.vercel.app/" class="project-link"
-              >View Project</a
-            >
-          </div>
-          <!-- Project Card 2 -->
-          <div class="project-card">
-            <img src="./bmiimg.png" alt="BMI Calculator" class="project-img" />
-            <h3>BMI Calculator</h3>
-            <p>I built this BMI Calculator with HTML, CSS, and JavaScript.</p>
-            <a
-              href="https://bmi-calculator-main-uojx.vercel.app/"
-              class="project-link"
-              >View Project</a
-            >
-          </div>
+  <!-- My js link for animation -->
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h1>Hi, I'm Tech Mulan</h1>
+      <p>Your go-to front-end web developer</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I specialize in building responsive, user-friendly websites using
+        modern front-end technologies like HTML, CSS, and JavaScript. I'm
+        passionate about creating seamless web experiences.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <!-- Flexbox Container for the project cards -->
+      <div class="project-cards">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img src="./travelagencyimage.png" alt="Travel Agency Website" class="project-img" />
+          <h3>Travel Agency websites</h3>
+          <p>
+            I built this travel agency website using HTML, CSS, Bootstrap, and
+            JavaScript.
+          </p>
+          <a href="https://travel-agency-lac.vercel.app/" class="project-link">View Project</a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img src="./bmiimg.png" alt="BMI Calculator" class="project-img" />
+          <h3>BMI Calculator</h3>
+          <p>I built this BMI Calculator with HTML, CSS, and JavaScript.</p>
+          <a href="https://bmi-calculator-main-uojx.vercel.app/" class="project-link">View Project</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mgvollbw" method="POST">
+  <section id="contact">
+    <div class="container">
+      <h2 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="2ms">Contact Me</h2>
+      <form action="https://formspree.io/f/mgvollbw" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-          <button type="submit" class="">Send Message</button>
-        </form>
+  <footer>
+    <p>© 2025 Tech Mulan | ceovertical@gmail.com | Front-End Developer</p>
+  </footer>
 
-      </div>
-    </section>
+  <script>
+    new WOW().init();
 
-    <footer>
-      <p>© 2025 Tech Mulan | ceovertical@gmail.com | Front-End Developer</p>
-    </footer>
+    var wow = new WOW(
+      {
+        boxClass: 'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        mobile: true,       // trigger animations on mobile devices (default is true)
+        live: true,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();
+  </script>
+</body>
 
-    <!-- <script src="script.js"></script> -->
-  </body>
 </html>
